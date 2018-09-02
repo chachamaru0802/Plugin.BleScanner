@@ -4,8 +4,8 @@
              x:Class="BleScannerSample.Views.MainPage"
              Title="{Binding Title}">
 
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Welcome to Xamarin Forms and Prism!" />
+    <StackLayout>
+        <Button Text="Ble Scan" Command="{Binding BleScanCommand}"/>
     </StackLayout>
 
 </ContentPage>
