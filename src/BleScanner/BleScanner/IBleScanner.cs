@@ -6,5 +6,8 @@ namespace Plugin.BleScanner
 {
     public interface IBleScanner
     {
+        IObservable<IScanResult> Scan();
+
+        void StopScan();
     }
 }

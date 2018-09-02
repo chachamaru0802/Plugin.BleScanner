@@ -9,5 +9,15 @@ namespace Plugin.BleScanner
     /// </summary>
     public class BleScannerImplementation : IBleScanner
     {
+        
+
+        public IObservable<IScanResult> Scan()
+        {
+            return null;
+        }
+
+        public void StopScan()
+        {
+        }
     }
 }
