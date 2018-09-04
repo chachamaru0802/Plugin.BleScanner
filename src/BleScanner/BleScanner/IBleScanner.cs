@@ -9,5 +9,7 @@ namespace Plugin.BleScanner
         IObservable<IScanResult> Scan();
 
         void StopScan();
+
+        void OpenSetting();
     }
 }

@@ -15,9 +15,18 @@ namespace Plugin.BleScanner
         public LollipopScanCallback(Action<BluetoothDevice, int, ScanRecord> callback)
            => _callback = callback;
 
-     
+        public override void OnScanFailed([GeneratedEnum] ScanFailure errorCode)
+        {
+            base.OnScanFailed(errorCode);
+        }
+
 
         public override void OnScanResult([GeneratedEnum] ScanCallbackType callbackType, Android.Bluetooth.LE.ScanResult result)
             => _callback(result.Device, result.Rssi, result.ScanRecord);
+
+        public override void OnBatchScanResults(IList<Android.Bluetooth.LE.ScanResult> results)
+        {
+            base.OnBatchScanResults(results);
+        }
     }
 }

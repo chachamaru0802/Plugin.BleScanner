@@ -6,5 +6,12 @@ namespace Plugin.BleScanner
 {
     public interface IScanResult
     {
+        IDevice Device { get; }
+
+        int Rssi { get; }
+
+
+        IBeacon Beacon { get; }
+
     }
 }

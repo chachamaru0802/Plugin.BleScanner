@@ -9,7 +9,10 @@ namespace Plugin.BleScanner
     /// </summary>
     public class BleScannerImplementation : IBleScanner
     {
-        
+        public void OpenSetting()
+        {
+            
+        }
 
         public IObservable<IScanResult> Scan()
         {

@@ -7,7 +7,7 @@ namespace Plugin.BleScanner
     /// <summary>
     /// Interface for $safeprojectgroupname$
     /// </summary>
-    public class BleScannerImplementation : IBleScanner
-    {
-    }
+    //public class BleScannerImplementation : IBleScanner
+    //{
+    //}
 }
